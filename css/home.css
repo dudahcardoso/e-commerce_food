@@ -1,0 +1,230 @@
+@import url("https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: Mukta;
+}
+
+/* NAV BAR */
+.cabecalho {
+  width: 100%;
+  /* background-color: bisque; */
+  margin-bottom: 1rem;
+}
+
+ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+li {
+  list-style: none;
+  padding: 1.5rem;
+}
+
+ul li#menu-food {
+  padding-right: 5rem;
+}
+
+i.bi-list {
+  font-size: 50px;
+}
+
+ul li#image-localizacao {
+  padding-right: 0;
+  padding-left: 5rem;
+  margin-right: 0.8rem;
+  display: flex;
+  align-items: center;
+}
+
+i.bi-geo-alt {
+  font-size: 33px;
+  color: orange;
+}
+
+p.nome-localizacao {
+  font-size: 1.4rem;
+  padding-left: 0;
+  padding-right: 5rem;
+}
+
+ul li.logo-empresa {
+  padding-left: 5rem;
+}
+
+i.bi-card-image {
+  font-size: 70px;
+}
+
+/* Menagens de bem vindo */
+section#mensagens {
+  padding: 2rem;
+}
+
+#titulo-food {
+  font-style: bold;
+  margin-bottom: 0.5rem;
+  font-size: 40px;
+}
+
+.mensagem {
+  color: gray;
+}
+
+/* Input de procurar o pedido */
+#input {
+  display: flex;
+  width: 100%;
+  margin: 1rem;
+  align-items: center;
+}
+
+i.bi-search {
+  position: absolute;
+  color: gray;
+  padding-top: 0.2rem;
+  padding-left: 0.9rem;
+  font-size: 30px;
+}
+
+#input-text {
+  justify-content: center;
+  width: 90%;
+  padding: 1.5rem 0 1.5rem;
+  padding-left: 4rem;
+  border: none;
+  align-items: center;
+}
+
+::-webkit-input-placeholder {
+  color: grey;
+  padding: 2rem;
+}
+textarea:-moz-placeholder {
+  color: grey;
+}
+
+/* seção das gategorias */
+#categorias {
+  margin-left: 2rem;
+}
+#categoria-ul {
+  display: flex;
+  justify-content: space-evenly;
+}
+.categoria {
+  border: solid 1px;
+  border-radius: 4rem;
+  width: 30%;
+  padding: 2rem;
+  margin: 1.2rem;
+  font-weight: 300;
+  transition: transform 0.6s ease-in-out;
+  transition: box-shadow 0.2s ease-in-out;
+  text-align: center;
+}
+.categoria:hover {
+  background-color: orange;
+  border: 5px solid black;
+  transform: scale(1.1);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.6);
+}
+
+/* seção dos cards */
+#cards{
+    display: flex;
+   
+}
+
+.card{
+    margin: 2rem;
+    border-radius: 2rem;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.6);
+    /* justify-content: center;
+    align-items: center; */
+}
+.card:hover{
+    box-shadow: inset 50px 0 0 0;
+    color: white;
+}
+
+.card img{
+    width: 70%;  
+    justify-content: center;
+}
+
+.card h3{
+    text-align: center;
+    color: orange;
+    font-size: 20px;
+    margin-bottom: 1.3rem;    
+}
+
+#ver-mais{
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+/* seção avalie nosso APP */
+#avaliacao{
+    margin: 2rem;
+}
+
+#titulo-avaliacao{
+    font-size: 40px;
+}
+
+.bi-hand-thumbs-up{
+    font-size: 30px;
+}
+
+.bi-hand-thumbs-down{
+    font-size: 30px;
+}
+
+#frase-avaliacao{
+    font-size: 25px;
+    color: gray;
+    padding: 1.2rem;
+}
+
+/* Seção do footer */
+.footer{
+    margin: 3rem;
+    
+}
+
+.footer-card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-around;
+}
+
+.footer-item{
+    margin: .5rem;    
+}
+
+i.bi-house-fill{
+    font-size: 50px;
+}
+
+i.bi-emoji-smile{
+    font-size: 50px;
+}
+
+i.bi-receipt{
+    font-size: 50px;
+}
+
+i.bi-stickies{
+    font-size: 50px;
+}
+
+.footer-name-item{
+    font-weight: 700;
+}
