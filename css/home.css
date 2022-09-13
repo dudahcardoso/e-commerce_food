@@ -41,12 +41,12 @@ ul li#image-localizacao {
 }
 
 i.bi-geo-alt {
-  font-size: 33px;
+  font-size: 35px;
   color: orange;
 }
 
 p.nome-localizacao {
-  font-size: 1.4rem;
+  font-size: 30px;
   padding-left: 0;
   padding-right: 5rem;
 }
@@ -134,97 +134,105 @@ textarea:-moz-placeholder {
 }
 
 /* seção dos cards */
-#cards{
-    display: flex;
-   
+#cards {
+  display: flex;
 }
 
-.card{
-    margin: 2rem;
-    border-radius: 2rem;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.6);
-    /* justify-content: center;
+.card {
+  margin: 2rem;
+  border-radius: 2rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.6);
+  /* justify-content: center;
     align-items: center; */
+  text-align: center;
 }
-.card:hover{
-    box-shadow: inset 50px 0 0 0;
-    color: white;
+.card:hover {
+  box-shadow: inset 50px 0 0 0;
+  color: white;
 }
 
 .card img{
-    width: 70%;  
-    justify-content: center;
+  width: 70%;
+  justify-content: center;
 }
 
-.card h3{
-    text-align: center;
-    color: orange;
-    font-size: 20px;
-    margin-bottom: 1.3rem;    
+.card h3 {
+  text-align: center;
+  color: orange;
+  font-size: 20px;
+  margin-bottom: 1.3rem;
 }
 
-#ver-mais{
-    display: flex;
-    justify-content: flex-end;
-
+#ver-mais {
+  display: flex;
+  justify-content: flex-end;
+  padding-bottom: 2rem;
+  font-size: 20px;
 }
 
 /* seção avalie nosso APP */
-#avaliacao{
-    margin: 2rem;
+#avaliacao {
+  text-align: center;
+  border: 0.5rem outset orange;
+  outline: 0.5rem solid khaki;
+  box-shadow: 0 0 0 2rem skyblue;
+  border-radius: 12px;
+  font: bold 1rem sans-serif;
+  margin: 2rem;
+  padding: 1rem;
+  outline-offset: 0.5rem;
 }
 
-#titulo-avaliacao{
-    font-size: 40px;
+#titulo-avaliacao {
+  font-size: 40px;
 }
 
-.bi-hand-thumbs-up{
-    font-size: 30px;
+.bi-hand-thumbs-up {
+  font-size: 30px;
 }
 
-.bi-hand-thumbs-down{
-    font-size: 30px;
+.bi-hand-thumbs-down {
+  font-size: 30px;
 }
 
-#frase-avaliacao{
-    font-size: 25px;
-    color: gray;
-    padding: 1.2rem;
+#frase-avaliacao {
+  font-size: 25px;
+  color: gray;
+  padding: 1.2rem;
 }
 
 /* Seção do footer */
-.footer{
-    margin: 3rem;
-    
+.footer {
+  margin: 3rem;
 }
 
-.footer-card{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    justify-content: space-around;
+.footer-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-around;
 }
 
-.footer-item{
-    margin: .5rem;    
+.footer-item {
+  margin: 0.5rem;
 }
 
-i.bi-house-fill{
-    font-size: 50px;
+i.bi-house-fill {
+  font-size: 50px;
 }
 
-i.bi-emoji-smile{
-    font-size: 50px;
+i.bi-emoji-smile {
+  font-size: 50px;
 }
 
-i.bi-receipt{
-    font-size: 50px;
+i.bi-receipt {
+  font-size: 50px;
 }
 
-i.bi-stickies{
-    font-size: 50px;
+i.bi-stickies {
+  font-size: 50px;
 }
 
-.footer-name-item{
-    font-weight: 700;
+.footer-name-item {
+  font-weight: 700;
 }
