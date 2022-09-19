@@ -1,0 +1,37 @@
+@import url("https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.secao-login{
+    width: 60%;
+    margin: auto;
+}
+
+#nome-empresa{
+    text-align: center;
+    padding: 1.5rem;
+}
+
+.login-senha{
+    display: flex;
+    flex-direction: column;
+    margin: 1.2rem;
+}
+
+.login{
+    font-size: 20px;
+    padding: .5rem 0 0 0;
+    font-weight: 600;
+}
+
+.input{
+    padding: .5rem;
+}
+
+input[type=text]:focus {
+    border: 3px solid #555;
+  }
