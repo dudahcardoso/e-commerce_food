@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.carrinho{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.2rem;
+}
+
+i.bi-chevron-double-left{
+    font-size: 50px;
+    padding-left: 1.5rem;    
+}
+.nome-carrinho{
+    font-size: 20px;
+    font-weight: 800;
+    padding: 0.4rem;
+}
+
+i.bi-cart-x{
+    font-size: 50px;
+    padding-right: 1.5rem; 
+    color: red;
+}
+
+/* seção do carrinho com o produto */
+.produtos-carrinho{
+    display: flex;
+    margin: auto;
+    background-color: gainsboro;
+    width: 60%;
+    justify-content: space-around;
+    align-content: center;
+    border-radius: 8px;
+    box-shadow: 10px 5px 5px black;
+    margin-bottom: 2rem;
+}
+
+.img-carrinho, .nome-quantidade, .lixo-valor{
+    width: 40%;
+}
+
+#imagem-produto-carrinho{
+    width: 40%;
+    margin: 2rem;
+}
+
+.nome-quantidade{
+    justify-content: center;
+}
+
+#nome-produto{
+    font-size: 15px;
+    font-weight: 800;
+    padding: 0.4rem;
+    margin: 1.3rem;
+    text-align: center;
+}
+
+.quantidade{
+    display: flex;
+    justify-content: center;
+}
+
+i.bi-trash{
+    font-size: 50px;
+    padding-top: 2rem;
+}
+
+.lixo-valor{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.valor-unitario{
+    font-size: 20px;
+    padding-top: 1.3rem;
+}
