@@ -7,10 +7,10 @@
 }
 
 /* NAV BAR */
-.cabecalho {
+.cabecalho{
   width: 100%;
   /* background-color: bisque; */
-  margin-bottom: 1rem;
+  /* margin-bottom: .5rem; */
 }
 
 ul {

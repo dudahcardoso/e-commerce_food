@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.favorite{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.2rem;
+}
+
+i.bi-chevron-double-left{
+    font-size: 50px;
+    padding-left: 1.5rem;    
+}
+
+i.bi-heart-fill{
+    font-size: 50px;
+    color: red;
+    padding-right: 1.5rem;
+}
+
+.secao-produto{
+    /* display: flex; */
+    text-align: center;
+}
+
+#nome-produto{
+    text-align: center;
+}
+
+#descricao-produto{
+    margin: 1.5rem;
+    text-align: center;
+}
+
+#imagem-produto{
+    width: 25%;
+    justify-content: center;
+}
+
+.quantidade-produto{
+    display: flex;
+    justify-content: center;
+    padding: 0.5rem;
+}
+
+i.bi-dash-square{
+    padding: 0.5rem;
+    font-size: 25px;
+}
+
+.numero-produto{
+    padding: 0.5rem;
+    font-size: 25px;
+}
+
+i.bi-plus-square{
+    padding: 0.5rem;
+    font-size: 25px;
+}
+
+.precos-produto{
+    display: flex;
+    padding: 0.9rem;
+}
+
+.precos{
+    font-size: 20px;
+    font-weight: 800;
+    padding: 0.4rem;
+}
+
+.precos-valores{
+    font-size: 18px;
+
+}
+
+.botao-carrinho{
+    padding: .5rem;    
+}
+
+i.bi-cart-plus{
+    font-size: 20px;
+    color: aliceblue;
+    padding-right: 1.2rem;
+    position: absolute;
+    padding: .3rem;
+}
+
+.botao-add-carrinho{
+    box-shadow:inset 0px 1px 0px 0px #fce2c1;
+	background:linear-gradient(to bottom, #ffc477 5%, #fb9e25 100%);
+	background-color:#ffc477;
+	border-radius:6px;
+	border:1px solid #eeb44f;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-size:15px;
+	font-weight:bold;
+	padding: 6px 24px 6px 30px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #cc9f52;
+}
+.botao-add-carrinho:hover {
+	background:linear-gradient(to bottom, #fb9e25 5%, #ffc477 100%);
+	background-color:#fb9e25;
+}
+.botao-add-carrinho:active {
+	position:relative;
+	top:1px;
+}
