@@ -82,3 +82,71 @@ i.bi-trash{
     font-size: 20px;
     padding-top: 1.3rem;
 }
+
+.cupom{
+    display: flex;
+    margin: auto;
+    justify-content: center;
+}
+
+.input-cupom{
+    width: 36%;
+    padding: 0.5rem;
+    margin: 0 1.7rem;
+    border-radius: 3rem;
+}
+
+.botao-aplicar{
+    background-color: gainsboro;
+    width: 15%;
+    padding: 0.5rem;
+    border-radius: 3rem;
+}
+
+.pagamento{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    justify-content: center;
+}
+
+#total-delivery{
+    display: flex;
+    flex-direction: column;
+    margin: 2rem 16rem;
+    padding: 1.2rem;
+}
+
+.total-delivery{
+    padding: .3rem;
+}
+
+.botao-pagamento{
+    width: 60%;
+   margin: auto;
+   padding: .7rem;
+}
+
+.botao-pagamento{
+    box-shadow:inset 0px 1px 0px 0px #fce2c1;
+	background:linear-gradient(to bottom, #ffc477 5%, #fb9e25 100%);
+	background-color:#ffc477;
+	border-radius:6px;
+	border:1px solid #eeb44f;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-size:15px;
+	font-weight:bold;
+	padding: 6px 24px 6px 30px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #cc9f52;
+}
+.botao-pagamento:hover {
+	background:linear-gradient(to bottom, #fb9e25 5%, #ffc477 100%);
+	background-color:#fb9e25;
+}
+.botao-pagamentoo:active {
+	position:relative;
+	top:1px;
+}
