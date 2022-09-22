@@ -1,62 +1,73 @@
 @import url("https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 * {
-    padding: 0;
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-.secao-login{
-    width: 60%;
-    margin: auto;
+.secao-login {
+  width: 60%;
+  margin: auto;
+  /* box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  border-radius: 5px; */
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); 
+  transition: 0.3s;
 }
 
-#nome-empresa{
-    text-align: center;
-    padding: 1.5rem;
-}
-
-.login-senha{
-    display: flex;
-    flex-direction: column;
-    margin: 1.2rem;
-}
-
-.login{
-    font-size: 20px;
-    padding: .5rem 0 0 0;
-    font-weight: 600;
-}
-
-.input{
-    padding: .5rem;
-}
-
-input[type=text]:focus {
-    border: 3px solid #555;
+.secao-login:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
   }
+  
 
-.botao{
-    box-shadow:inset 0px 1px 0px 0px #fce2c1;
-	background:linear-gradient(to bottom, #ffc477 5%, #fb9e25 100%);
-	background-color:#ffc477;
-	border-radius:6px;
-	border:1px solid #eeb44f;
-	display:inline-block;
-	cursor:pointer;
-	color:#ffffff;
-	font-size:15px;
-	font-weight:bold;
-	padding: 6px 24px 6px 30px;
-	text-decoration:none;
-	text-shadow:0px 1px 0px #cc9f52;
-    margin-top: 1.5rem;
+#nome-empresa {
+  text-align: center;
+  padding: 1.5rem;
+}
+
+.login-senha {
+  display: flex;
+  flex-direction: column;
+  margin: 1.2rem;
+}
+
+.login {
+  font-size: 20px;
+  padding: 0.5rem 0 0 0;
+  font-weight: 600;
+}
+
+.input {
+  padding: 0.5rem;
+}
+
+input[type="text"]:focus {
+  border: 3px solid #555;
+}
+
+.botao {
+  box-shadow: inset 0px 1px 0px 0px #fce2c1;
+  background: linear-gradient(to bottom, #ffc477 5%, #fb9e25 100%);
+  background-color: #ffc477;
+  border-radius: 6px;
+  border: 1px solid #eeb44f;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 6px 24px 6px 30px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #cc9f52;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 .botao:hover {
-	background:linear-gradient(to bottom, #fb9e25 5%, #ffc477 100%);
-	background-color:#fb9e25;
+  background: linear-gradient(to bottom, #fb9e25 5%, #ffc477 100%);
+  background-color: #fb9e25;
 }
 .botao:active {
-	position:relative;
-	top:1px;
+  position: relative;
+  top: 1px;
 }
