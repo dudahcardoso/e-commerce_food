@@ -6,6 +6,11 @@
   font-family: Mukta;
 }
 
+body { 
+  min-height: 100vh; 
+}
+/* unidade vh (a altura da viewport) para permitir que o body defina um valor de altura mínima com base na altura total da viewport. */
+
 :root{
   --background-clear: beige;
   --cor-empresa: orange;  
@@ -183,6 +188,7 @@ input:focus {
 h3.nome-produto-card {
   font-size: 20px;
   text-align: center;
+  justify-content: baseline;
   color: orange;
   font-size: 20px;
   margin-bottom: 1.3rem;
@@ -243,18 +249,23 @@ h3.nome-produto-card {
 
 /* Seção do footer */
 .footer {
-  margin: 1.5rem;
+  background-color: var(--background-clear);
+  margin-top: 5rem;  
 }
 
 .footer-card {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   justify-content: space-around;
+  align-items: baseline;
+}
+
+.footer-card a{
+  text-decoration: none;
+  text-align: center;
 }
 
 .footer-item {
-  margin: 0.5rem;
+  margin: .5rem;
+  
 }
 
 i.bi-house-fill {
@@ -263,7 +274,7 @@ i.bi-house-fill {
 }
 
 i.bi-emoji-smile {
-  font-size: 50px;
+  font-size: 60px;
   color: var(--cor-empresa);
 }
 
@@ -280,5 +291,5 @@ i.bi-stickies {
 .footer-name-item {
   font-size: 20px;
   font-weight: 700;
-  color: gray;
+  color: gray; 
 }
