@@ -1,28 +1,15 @@
 * {
-    padding: 0;
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-button{
-    padding: .9rem;
-    margin: 2rem;
-    background-color: rgb(34, 150, 196);
-    color: aliceblue;
-    text-align: center;
-    border: 1px solid aliceblue;
-    box-shadow: 2px 2px black;
-    width: 10%;
+body{
+  color: rgb(34, 255, 0);
 }
 
-p{
-    font-size: 20px;
-    font-style: 400;
-    margin: 1rem 2rem 1rem 2rem;
-}
-
-input{
-    margin: 1rem 2rem;
-    padding: .8rem;
-
+@media screen and (min-width: 480px){
+  body{
+     color: rgb(128, 0, 117);
+  }
 }

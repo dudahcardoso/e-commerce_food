@@ -1,35 +1,41 @@
 @import url("https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
-* {
+*{
   padding: 0;
   margin: 0;
   font-family: Mukta;
 }
 
+:root{
+  --background-clear: beige;
+  --cor-empresa: orange;  
+}
+
 /* NAV BAR */
 .cabecalho{
   width: 100%;
-  /* background-color: bisque; */
-  /* margin-bottom: .5rem; */
+  background-image: url(https://thumbs.dreamstime.com/b/esquina-de-comida-mexicana-borde-arriba-abajo-vista-sobre-un-oscuro-fondo-banner-con-espacio-copia-la-est%C3%A1-en-parte-hacia-tacos-191566359.jpg);
 }
 
 ul {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 li {
   list-style: none;
   padding: 1.5rem;
+  color: antiquewhite;
 }
 
 ul li#menu-food {
   padding-right: 5rem;
+  font-size: 70px;
 }
 
 i.bi-list {
-  font-size: 50px;
+  font-size: 70px;
 }
 
 ul li#image-localizacao {
@@ -41,12 +47,12 @@ ul li#image-localizacao {
 }
 
 i.bi-geo-alt {
-  font-size: 35px;
-  color: orange;
+  font-size: 60px;
+  color: var(--cor-empresa);
 }
 
 p.nome-localizacao {
-  font-size: 30px;
+  font-size: 40px;
   padding-left: 0;
   padding-right: 5rem;
 }
@@ -60,18 +66,21 @@ i.bi-card-image {
 }
 
 /* Menagens de bem vindo */
-section#mensagens {
+section#mensagens-inicio {
   padding: 2rem;
+  background-color: var(--background-clear);
 }
 
 #titulo-food {
   font-style: bold;
   margin-bottom: 0.5rem;
-  font-size: 40px;
+  font-size: 50px;
+  color: var(--cor-empresa);
 }
 
 .mensagem {
   color: gray;
+  font-size: 25px;
 }
 
 /* Input de procurar o pedido */
@@ -84,41 +93,55 @@ section#mensagens {
 
 i.bi-search {
   position: absolute;
-  color: gray;
+  color: var(--cor-empresa);
   padding-top: 0.2rem;
-  padding-left: 0.9rem;
-  font-size: 30px;
+  padding-left: 5rem;
+  margin-right: 2rem;
+  font-size: 50px;
 }
 
 #input-text {
-  justify-content: center;
+  margin: auto;
+  font-size: 25px;
   width: 90%;
   padding: 1.5rem 0 1.5rem;
   padding-left: 4rem;
-  border: none;
-  align-items: center;
+  border: 4mm ridge rgba(255, 197, 5, 0.943);
+  text-align: center;
+}
+
+input:focus {
+  /* box-shadow: 0 0 0 0; */
+  outline: 0;
 }
 
 ::-webkit-input-placeholder {
   color: grey;
   padding: 2rem;
 }
-textarea:-moz-placeholder {
-  color: grey;
-}
+
 
 /* seção das gategorias */
 #categorias {
   margin-left: 2rem;
+  width: 80%;
+  margin: auto;
 }
-#categoria-ul {
+
+#categoria-ul {  
   display: flex;
   justify-content: space-evenly;
 }
-.categoria {
-  border: solid 1px;
-  border-radius: 4rem;
-  width: 30%;
+
+.a-categoria{
+  text-decoration: none;
+}
+
+.categoria{
+  color: grey;
+  border: solid 1px var(--cor-empresa);
+  border-radius: 2rem;
+  width: 100%;
   padding: 2rem;
   margin: 1.2rem;
   font-weight: 300;
@@ -127,8 +150,8 @@ textarea:-moz-placeholder {
   text-align: center;
 }
 .categoria:hover {
-  background-color: orange;
-  border: 5px solid black;
+  background-color: var(--cor-empresa);
+  border: 5px solid grey;
   transform: scale(1.1);
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.6);
 }
@@ -145,6 +168,7 @@ textarea:-moz-placeholder {
   /* justify-content: center;
     align-items: center; */
   text-align: center;
+  width: 25%;
 }
 .card:hover {
   box-shadow: inset 50px 0 0 0;
@@ -156,7 +180,8 @@ textarea:-moz-placeholder {
   justify-content: center;
 }
 
-.card h3 {
+h3.nome-produto-card {
+  font-size: 20px;
   text-align: center;
   color: orange;
   font-size: 20px;
@@ -167,7 +192,14 @@ textarea:-moz-placeholder {
   display: flex;
   justify-content: flex-end;
   padding-bottom: 2rem;
-  font-size: 20px;
+  font-size: 30px;
+  margin-right: 2rem;
+}
+
+#ver-mais a{
+  color: grey;
+  text-decoration: none;
+  margin: .8rem 2rem;
 }
 
 /* seção avalie nosso APP */
@@ -175,28 +207,36 @@ textarea:-moz-placeholder {
   text-align: center;
   border: 0.5rem outset orange;
   outline: 0.5rem solid khaki;
-  box-shadow: 0 0 0 2rem skyblue;
+  box-shadow: 0 0 0 2rem gray;
   border-radius: 12px;
   font: bold 1rem sans-serif;
   margin: 2rem;
   padding: 1rem;
   outline-offset: 0.5rem;
+  width: 50%;
+  margin: auto;
 }
 
 #titulo-avaliacao {
   font-size: 40px;
+  color: var(--cor-empresa);
+  text-shadow: 2px 2px black;
 }
 
 .bi-hand-thumbs-up {
-  font-size: 30px;
+  font-size: 40px;
+  color: var(--cor-empresa);
+  text-shadow: 2px 2px black;  
 }
 
 .bi-hand-thumbs-down {
-  font-size: 30px;
+  font-size: 40px;
+  color: var(--cor-empresa);
+  text-shadow: 2px 2px black;
 }
 
 #frase-avaliacao {
-  font-size: 25px;
+  font-size: 30px;
   color: gray;
   padding: 1.2rem;
 }
@@ -218,21 +258,27 @@ textarea:-moz-placeholder {
 }
 
 i.bi-house-fill {
-  font-size: 50px;
+  font-size: 60px;
+  color: var(--cor-empresa);
 }
 
 i.bi-emoji-smile {
   font-size: 50px;
+  color: var(--cor-empresa);
 }
 
 i.bi-receipt {
-  font-size: 50px;
+  font-size: 60px;
+  color: var(--cor-empresa);
 }
 
 i.bi-stickies {
-  font-size: 50px;
+  font-size: 60px;
+  color: var(--cor-empresa);
 }
 
 .footer-name-item {
+  font-size: 20px;
   font-weight: 700;
+  color: gray;
 }
