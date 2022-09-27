@@ -12,20 +12,25 @@
     <link rel="stylesheet" href="./css/produto.css" />
     <link rel="stylesheet" href="./css/carrinho.css" />
     <link rel="stylesheet" href="./css/login.css" />
-    <title>HOME</title>
+    <link rel="stylesheet" href="./css/padrao-telas.css">
+    <title>LOGIN</title>
   </head>
 
   <body>
     <header class="cabecalho">
+      
       <nav id="menu">
-        <ul>
-          <li id="menu-food"><i class="bi bi-list"></i></li>
-
+        <ul class="ul-menu">
+          <a href="login.html"
+            ><li id="menu-food"><i class="bi bi-file-person"></i>
+            </i></li
+          ></a>
+      
           <li id="image-localizacao">
             <i class="bi bi-geo-alt"></i>
             <p class="nome-localizacao">Londrina, PR</p>
           </li>
-
+      
           <li class="logo-empresa">
             <i class="bi bi-card-image"></i>
           </li>
@@ -42,35 +47,50 @@
         <input type="text" class="input"/>
 
         <label for="" class="login">SENHA</label>
-        <input type="text" class="input"/>
+        <input type="password" class="input"/>
 
         <button class="botao">REALIZAR LOGIN</button>
       </div>
 
     </section>
 
-    <footer class="footer">
+    <footer id="footer" class="footer">
       <ul class="footer-card">
+      <a href="home2.html">
         <li id="footer-item">
           <i class="bi bi-house-fill"></i>
           <p class="footer-name-item">HOME</p>
         </li>
+      </a>
 
-        <li>
+      <a href="cadastrar_usuario.html">
+        <li id="footer-item">
           <i class="bi bi-emoji-smile"></i>
-          <p class="footer-name-item">PERFIL</p>
+          <p class="footer-name-item">CADASTRO USUÁRIO</p>
         </li>
+      </a>
 
-        <li>
-          <i class="bi bi-receipt"></i>
-          <p class="footer-name-item">CUPONS</p>
+      <a href="cadastro_produto.html">
+        <li id="footer-item">
+          <i class="bi bi-upc-scan"></i>
+          <p class="footer-name-item">CADASTRO PRODUTO</p>
         </li>
+      </a>
 
-        <li>
+      <a href="carrinho.html">
+        <li id="footer-item">
+          <i class="bi bi-cart"></i>
+          <p class="footer-name-item">CARRINHO</p>
+        </li>
+      </a>
+
+      <a href="produto.html">
+        <li id="footer-item">
           <i class="bi bi-stickies"></i>
-          <p class="footer-name-item">PEDIDOS</p>
+          <p class="footer-name-item">PRODUTO</p>
         </li>
-      </ul>
-    </footer>
+      </a>
+    </ul>
+  </footer>
   </body>
 </html>

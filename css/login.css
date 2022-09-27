@@ -1,11 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap");
-
-* {
-  padding: 0;
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
 .secao-login {
   width: 60%;
   margin: 2rem auto;
@@ -26,6 +18,13 @@
   text-shadow: 2px 2px black;
   text-align: center;
   padding: 1.5rem;
+}
+
+.secao-login img{
+  display: flex;
+  width: 30%;
+  justify-content: center;
+  margin: auto;
 }
 
 .login-senha {
@@ -102,8 +101,10 @@ input[type="text"]:focus {
   padding: 12px 24px 12px 30px;
   text-decoration: none;
   text-shadow: 0px 1px 0px #cc9f52;
-  margin-top: 1.5rem;
-  margin-bottom: 1.5rem;
+  margin: auto;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  width: 90%;
 }
 .botao:hover {
   background: linear-gradient(to bottom, #fb9e25 5%, #ffc477 100%);

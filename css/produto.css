@@ -1,124 +1,127 @@
-@import url("https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap");
-
-* {
-    padding: 0;
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
+.favorite {
+  display: flex;
+  justify-content: space-between;
+  margin: 2rem;
+}
+.favorite a{
+    text-decoration: none;
+    color: black;
+}
+i.bi-chevron-double-left {
+  font-size: 110px;
+  padding-left: 1.5rem;
 }
 
-.favorite{
-    display: flex;
-    justify-content: space-between;
-    margin: 2rem;
+i.bi-heart-fill {
+  font-size: 70px;
+  text-shadow: 1px 1px black;
+  color: red;
+  padding-right: 1.5rem;
 }
 
-i.bi-chevron-double-left{
-    font-size: 110px;
-    padding-left: 1.5rem;    
+i.bi-heart-fill:hover {
+  color: #fce2c1;
 }
-
-i.bi-heart-fill{
-    font-size: 70px;
-    text-shadow: 1px 1px black;
-    color: red;
-    padding-right: 1.5rem;
-}
-
-i.bi-heart-fill:hover{
-    color: #fce2c1;
-}
-
 
 /* seção produto */
-.secao-produto{
-    /* display: flex; */
-    text-align: center;
+.secao-produto {
+  /* display: flex; */
+  text-align: center;
 }
 
-#descricao-produto{
-    margin: 1.5rem;
-    text-align: center;
-    font-size: 25px;
+#descricao-produto {
+  margin: 1.5rem;
+  text-align: center;
+  font-size: 25px;
 }
 
-#imagem-produto{
-    width: 25%;
-    justify-content: center;
-    border-radius: 2rem;
+#imagem-produto {
+  width: 25%;
+  justify-content: center;
+  border-radius: 2rem;
 }
 
-.quantidade-produto{
-    display: flex;
-    justify-content: center;
-    padding: 0.5rem;
+#imagem-produto:hover {
+  border: 2px solid black;
+  transform: scale(.9);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.6);
+  cursor: pointer;
 }
 
-i.bi-dash-square{
-    padding: 0.5rem;
-    font-size: 30px;
+.quantidade-produto {
+  display: flex;
+  justify-content: center;
+  padding: 0.5rem;
 }
 
-.numero-produto{
-    padding: 0.5rem;
-    font-size: 30px;
+i.bi-dash-square {
+  padding: 0.5rem;
+  font-size: 30px;
 }
 
-i.bi-plus-square{
-    padding: 0.5rem;
-    font-size: 30px;
+.numero-produto {
+  padding: 0.5rem;
+  font-size: 30px;
 }
 
-.precos-produto{
-    display: flex;
-    padding: 0.9rem;
+i.bi-plus-square {
+  padding: 0.5rem;
+  font-size: 30px;
 }
 
-.precos{
-    font-size: 30px;
-    font-weight: 800;
-    padding: 0.4rem;
-    color: var(--cor-empresa);
-    text-shadow: 1px 1px black;
+.precos-produto {
+  display: flex;
+  padding: 0.9rem;
 }
 
-.precos-valores{
-    font-size: 25px;
+.precos {
+  font-size: 30px;
+  font-weight: 800;
+  padding: 0.4rem;
+  color: var(--cor-empresa);
+  text-shadow: 1px 1px black;
+}
+
+.precos-valores {
+  font-size: 25px;
 }
 
 /* Botão */
-.botao-carrinho{
-    padding: 1.2rem;    
+.botao-carrinho {
+  display: flex;
+  margin: auto;
+  padding: 1.2rem;
 }
 
-i.bi-cart-plus{
-    font-size: 50px;
-    color: black;
-    position: absolute;
-    padding: .9rem .3rem;
-    margin-left: 3rem;
+i.bi-cart-plus {
+  font-size: 50px;
+  color: black;
+  position: absolute;
+  padding: 0.9rem 0.3rem;
+  margin-left: 3rem;
 }
 
-.botao-add-carrinho{
-    box-shadow:inset 0px 1px 0px 0px #fce2c1;
-	background:linear-gradient(to bottom, #ffc477 5%, #fb9e25 100%);
-	background-color:#ffc477;
-	border-radius:6px;
-	border:1px solid #eeb44f;
-	display:inline-block;
-	cursor:pointer;
-	color: black;
-	font-size:15px;
-	font-weight:bold;
-	padding: 40px 60px 40px 60px;
-	text-decoration:none;
-	text-shadow:0px 1px 0px #cc9f52;
-    width: 40%;
+.botao-add-carrinho {
+  box-shadow: inset 0px 1px 0px 0px #fce2c1;
+  background: linear-gradient(to bottom, #ffc477 5%, #fb9e25 100%);
+  background-color: #ffc477;
+  border-radius: 6px;
+  border: 1px solid #eeb44f;
+  display: inline-block;
+  cursor: pointer;
+  color: black;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 40px 60px 40px 60px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #cc9f52;
+  width: 40%;
 }
 .botao-add-carrinho:hover {
-	background:linear-gradient(to bottom, #fb9e25 5%, #ffc477 100%);
-	background-color:#fb9e25;
+  background: linear-gradient(to bottom, #fb9e25 5%, #ffc477 100%);
+  background-color: #fb9e25;
 }
 .botao-add-carrinho:active {
-	position:relative;
-	top:1px;
+  position: relative;
+  top: 1px;
 }

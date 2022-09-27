@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+*{
+  padding: 0;
+  margin: 0;
+  font-family: Mukta;
+}
+
+body { 
+  min-height: 100vh; 
+}
+/* unidade vh (a altura da viewport) para permitir que o body defina um valor de altura mínima com base na altura total da viewport. */
+
+:root{
+  --background-clear: beige;
+  --cor-empresa: orange;  
+}
+
+/* NAV BAR */
+.cabecalho{
+  width: 100%;
+  background-image: url(https://thumbs.dreamstime.com/b/esquina-de-comida-mexicana-borde-arriba-abajo-vista-sobre-un-oscuro-fondo-banner-con-espacio-copia-la-est%C3%A1-en-parte-hacia-tacos-191566359.jpg);
+}
+
+#menu .ul-menu {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+li {
+  list-style: none;
+  padding: 2rem;
+  color: antiquewhite;
+}
+
+ul li#menu-food {
+  padding-right: 5rem;
+  font-size: 70px;
+}
+
+i.bi-list {
+  font-size: 70px;
+}
+
+ul li#image-localizacao {
+  padding-right: 0;
+  padding-left: 5rem;
+  margin-right: 0.8rem;
+  display: flex;
+  align-items: center;
+}
+
+i.bi-geo-alt {
+  font-size: 60px;
+  color: var(--cor-empresa);
+}
+
+p.nome-localizacao {
+  font-size: 40px;
+  padding-left: 0;
+  padding-right: 5rem;
+}
+
+ul li.logo-empresa {
+  padding-left: 5rem;
+}
+
+i.bi-card-image {
+  font-size: 70px;
+}
+
+
+/* Seção do FOOTER */
+/* Seção do footer */
+.footer {
+    background-color: var(--background-clear);
+    margin-top: 5rem;  
+  }
+  
+  .footer-card {
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+  }
+  
+  .footer-card a{
+    text-decoration: none;
+    text-align: center;
+  }
+  
+  .footer-item {
+    margin: .5rem;
+    
+  }
+  
+  i.bi-house-fill {
+    font-size: 60px;
+    color: var(--cor-empresa);
+  }
+  
+  i.bi-emoji-smile {
+    font-size: 60px;
+    color: var(--cor-empresa);
+  }
+  
+  i.bi-upc-scan{
+    font-size: 60px;
+    color: var(--cor-empresa);
+  }
+  
+  i.bi-cart {
+    font-size: 60px;
+    color: var(--cor-empresa);
+  }
+  
+  i.bi-stickies {
+    font-size: 60px;
+    color: var(--cor-empresa);
+  }
+  
+  .footer-name-item {
+    font-size: 20px;
+    font-weight: 700;
+    color: gray; 
+  }
+  

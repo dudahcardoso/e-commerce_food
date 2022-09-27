@@ -1,20 +1,13 @@
-@import url("https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap");
-
-* {
-    padding: 0;
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-:root{
-    --background-clear: beige;
-    --cor-empresa: orange;  
-  }
-
+/* Seção carrinho */
 .carrinho{
     display: flex;
     justify-content: space-between;
     margin: 2rem;
+}
+
+.carrinho a{
+    text-decoration: none;
+    color: black;
 }
 
 i.bi-chevron-double-left{
@@ -66,6 +59,8 @@ i.bi-cart-x{
     padding: 0.4rem;
     margin: 1.3rem;
     text-align: center;
+    color: black;  
+    text-shadow: 1px 1px var(--cor-empresa);
 }
 
 .quantidade{
@@ -76,6 +71,7 @@ i.bi-cart-x{
 i.bi-trash{
     font-size: 50px;
     padding-top: 2rem;
+    color: red;
 }
 
 .lixo-valor{
@@ -89,6 +85,7 @@ i.bi-trash{
     padding-top: 1.3rem;
 }
 
+/* Seção do CUPOM */
 .cupom{
     display: flex;
     justify-content: center;
@@ -119,6 +116,8 @@ i.bi-trash{
     border: 3px solid rgba(255, 197, 5, 0.943);
   }
 
+  /* seção do botão realizar pagamento */
+
 .botao-aplicar{
     box-shadow: inset 0px 1px 0px 0px #fce2c1;
     background: linear-gradient(to bottom, #ffc477 5%, #fb9e25 100%);
@@ -130,7 +129,7 @@ i.bi-trash{
     color: black;
     font-size: 15px;
     font-weight: bold;
-    padding: 20px;
+    padding: .9rem 0 .9rem 0;
     text-decoration: none;
     text-shadow: 0px 1px 0px #cc9f52;
     margin-top: 1.5rem;
@@ -148,35 +147,41 @@ i.bi-trash{
     top: 1px;
   }
 
+  /* Seção do pagamento */
 .pagamento{
     display: flex;
-    flex-direction: column;
-    margin: auto;
-    justify-content: center;
+    /* justify-content: center; */
+    flex-direction: column; 
+    align-items: center;   
 }
 
-#total-delivery{
+/* #total-delivery{
     display: flex;
     flex-direction: column;
-    margin: 2rem 16rem;
+    justify-content: center;
+    margin: 2rem 12rem;
     padding: 1.2rem;
-}
+} */
 
-.total-delivery{
+/* .total-delivery{
     font-size: 25px;
     padding: .3rem;
     margin: 0 2rem;
     color: black;
     text-shadow: 1px 1px var(--cor-empresa);
+} */
+
+.botao-carrinho{
+   width: 90%;
+   padding: 1.5rem;
+   display: flex;
 }
 
-.botao-pagamento{
-    width: 60%;
-   margin: auto;
-   padding: .7rem;
+.botao-add-carrinho{
+    margin: auto;
 }
 
-.botao-pagamento{
+.botao-add-carrinho{
     box-shadow:inset 0px 1px 0px 0px #fce2c1;
 	background:linear-gradient(to bottom, #ffc477 5%, #fb9e25 100%);
 	background-color:#ffc477;
@@ -191,11 +196,11 @@ i.bi-trash{
 	text-decoration:none;
 	text-shadow:0px 1px 0px #cc9f52;
 }
-.botao-pagamento:hover {
+.botao-a.botao-add-carrinho {
 	background:linear-gradient(to bottom, #fb9e25 5%, #ffc477 100%);
 	background-color:#fb9e25;
 }
-.botao-pagamentoo:active {
+.botao-add-carrinho:active {
 	position:relative;
 	top:1px;
 }

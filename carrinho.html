@@ -12,20 +12,25 @@
     <link rel="stylesheet" href="./css/produto.css" />
     <link rel="stylesheet" href="./css/carrinho.css" />
     <link rel="stylesheet" href="./css/login.css"/>
+    <link rel="stylesheet" href="./css/padrao-telas.css">
     <title>HOME</title>
   </head>
 
   <body>
     <header class="cabecalho">
+      
       <nav id="menu">
-        <ul>
-          <li id="menu-food"><i class="bi bi-list"></i></li>
-
+        <ul class="ul-menu">
+          <a href="login.html"
+            ><li id="menu-food"><i class="bi bi-file-person"></i>
+            </i></li
+          ></a>
+      
           <li id="image-localizacao">
             <i class="bi bi-geo-alt"></i>
             <p class="nome-localizacao">Londrina, PR</p>
           </li>
-
+      
           <li class="logo-empresa">
             <i class="bi bi-card-image"></i>
           </li>
@@ -34,7 +39,7 @@
     </header>
 
     <section class="carrinho">
-      <i class="bi bi-chevron-double-left"></i>
+      <a href="home2.html"><i class="bi bi-chevron-double-left"></i></a>
       <h1 id="nome-empresa">CARRINHO</h1>
       <i class="bi bi-cart-x"></i>
     </section>
@@ -89,39 +94,62 @@
     </section>
 
     <section class="cupom">
-      <input type="text" placeholder="CUPOM" class="input-cupom"> <button class="botao-aplicar">Aplicar</button>
+      <input type="text" placeholder="CUPOM" class="input-cupom"> 
+      <button class="botao-aplicar">Aplicar</button>
     </section>
 
     <section class="pagamento">
-      <div id="total-delivery">
-      <p class="total-delivery">TOTAL</p> 
-      <p class="total-delivery">DELIVERY</p>
-    </div>
-      <button class="botao-pagamento">IR PARA PAGAMENTO</button>
+      <div class="precos-poduto">
+        <p class="precos">Preço Total</p>
+        <p class="precos-valores">R$ 0000,00</p>
+
+        <p class="precos">Preço Delivery</p>
+        <p class="precos-valores">R$ 0000,00</p>
+      </div>
+
+      <div class="botao-carrinho">
+        <button class="botao-add-carrinho">REALIZAR PAGAMENTO</button>
+      </div>
+
     </section>
 
-    <footer class="footer">
+    <footer id="footer" class="footer">
       <ul class="footer-card">
+      <a href="home2.html">
         <li id="footer-item">
           <i class="bi bi-house-fill"></i>
           <p class="footer-name-item">HOME</p>
         </li>
+      </a>
 
-        <li>
+      <a href="cadastrar_usuario.html">
+        <li id="footer-item">
           <i class="bi bi-emoji-smile"></i>
-          <p class="footer-name-item">PERFIL</p>
+          <p class="footer-name-item">CADASTRO USUÁRIO</p>
         </li>
+      </a>
 
-        <li>
-          <i class="bi bi-receipt"></i>
-          <p class="footer-name-item">CUPONS</p>
+      <a href="cadastro_produto.html">
+        <li id="footer-item">
+          <i class="bi bi-upc-scan"></i>
+          <p class="footer-name-item">CADASTRO PRODUTO</p>
         </li>
+      </a>
 
-        <li>
+      <a href="carrinho.html">
+        <li id="footer-item">
+          <i class="bi bi-cart"></i>
+          <p class="footer-name-item">CARRINHO</p>
+        </li>
+      </a>
+
+      <a href="produto.html">
+        <li id="footer-item">
           <i class="bi bi-stickies"></i>
-          <p class="footer-name-item">PEDIDOS</p>
+          <p class="footer-name-item">PRODUTO</p>
         </li>
-      </ul>
-    </footer>
+      </a>
+    </ul>
+  </footer>
   </body>
 </html>
