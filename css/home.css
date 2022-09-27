@@ -167,13 +167,16 @@ input:focus {
 }
 
 .card {
+  display: block;
   margin: 2rem;
   border-radius: 2rem;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.6);
-  /* justify-content: center;
-    align-items: center; */
+  justify-content: center;
+  align-items: center;
   text-align: center;
   width: 25%;
+  align-content: center;
+
 }
 .card:hover {
   box-shadow: inset 50px 0 0 0;
@@ -181,14 +184,18 @@ input:focus {
 }
 
 .card img{
-  width: 70%;
+  display: block;
   justify-content: center;
+  margin: auto;
+  width: 70%;
 }
 
 h3.nome-produto-card {
+  display: flex;
+  margin: auto;
   font-size: 20px;
-  text-align: center;
-  justify-content: baseline;
+  /* text-align: center; */
+  justify-content: center;
   color: orange;
   font-size: 20px;
   margin-bottom: 1.3rem;

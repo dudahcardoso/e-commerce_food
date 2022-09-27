@@ -40,29 +40,39 @@
       <form action="">
         <div class="login-senha">
           <label for="" class="login">NOME</label>
-          <input type="text" class="input" />
+          <input type="text" class="input" placeholder="Digite seu nome" />
 
           <label for="" class="login">E-MAIL</label>
-          <input type="email" class="input" />
+          <input type="email" class="input" placeholder="Digite seu e-mail" />
 
           <label for="" class="login">SENHA</label>
-          <input type="password" class="input" />
+          <input type="password" class="input" placeholder="Digite sua senha" />
 
           <label for="" class="login">IMAGEM</label>
-          <input type="text" class="input" />
+          <input
+            type="text"
+            class="input"
+            placeholder="Insira o link da imagem"
+          />
 
           <label for="" class="login">ENDEREÇO</label>
-          <input type="text" class="input" />
+          <input type="text" class="input" placeholder="Digite seu endereço" />
 
           <label for="" class="login">PRODUTOS FAVORITOS</label>
-          <input type="text" class="input" />
+          <input
+            type="text"
+            class="input"
+            placeholder="Digite seus produtos favoritos"
+          />
 
-          <label for="" class="login">PEDIDOS</label>
-          <input type="text" class="input" />
+          <!-- <label for="" class="login">PEDIDOS</label>
+          <input type="text" class="input" placeholder="Digite sua senha" /> -->
 
-          <label for="" class="login">ADMIN</label>
-          <input type="text" class="input" />
-
+          <label class="login">ADMIN</label>
+          <div class="radio">
+            <input for="admin" type="radio" id="admin" name="admin" /><label for="admin" id="admin">Admin</label>
+            <input type="radio" id="cliente" name="admin" /><label for="cliente" id="cliente">Cliente</label>
+          </div>
           <button class="botao">CADASTRAR USUÁRIO</button>
         </div>
       </form>
