@@ -242,3 +242,34 @@ h3.nome-produto-card {
   }
 
 }
+
+
+/* @media screen and (max-width: 480px){
+  body{
+      width: 100%;
+  }
+
+  i.bi-search{
+      position: absolute;
+      margin-right: 3rem;
+      padding-left: 3rem;
+  }
+
+  #categoria-ul{
+      flex-wrap: wrap;
+      margin: auto;
+  }
+
+  #cards-produtos{
+      flex-wrap: wrap;
+      margin: auto;
+  }
+
+  div.card-produto{
+      width: 100%;
+  }
+
+  span#frase-avaliacao{
+      display: none;
+  }
+} */
