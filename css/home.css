@@ -135,6 +135,7 @@ h3.nome-produto-card {
   margin-bottom: 1.3rem;
 }
 
+/* seção do ver mais */
 #ver-mais {
   display: flex;
   justify-content: flex-end;
@@ -188,3 +189,29 @@ h3.nome-produto-card {
   padding: 1.2rem;
 }
 
+
+/* Usando media queries para transformar nossa page acessível a tela menores */
+@media screen and (max-width: 480px){
+  body{
+    width: 100%;
+  }
+
+#categoria-ul{
+  flex-wrap: wrap;
+  /* flex-grow: 1; */
+  }
+
+  section#cards{
+    flex-wrap: wrap;
+    margin: auto;
+  }
+
+  div.card{
+    width: 100%
+  }
+
+ span#frase-avaliacao{
+  display: none;
+  }
+
+}

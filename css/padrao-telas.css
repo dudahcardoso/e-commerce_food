@@ -22,7 +22,7 @@ body {
   background-image: url(https://thumbs.dreamstime.com/b/esquina-de-comida-mexicana-borde-arriba-abajo-vista-sobre-un-oscuro-fondo-banner-con-espacio-copia-la-est%C3%A1-en-parte-hacia-tacos-191566359.jpg);
 }
 
-#menu .ul-menu {
+.menu .ul-menu {
   display: flex;
   align-items: center;
   justify-content: flex-end;
@@ -34,14 +34,11 @@ li {
   color: antiquewhite;
 }
 
-ul li#image-usuario {
+.bi-file-person{
   padding-right: 5rem;
   font-size: 70px;
 }
 
-i.bi-list {
-  font-size: 70px;
-}
 
 ul li#image-localizacao {
   padding-right: 0;
@@ -125,3 +122,50 @@ i.bi-card-image {
     color: gray; 
   }
   
+
+  /* Usando media queries para transformar nossa page acessível a tela menores */
+  @media screen and (max-width: 480px){
+    body{
+      width: 100%;
+    }
+    header{
+      display: flex;      
+    }
+
+    i.bi-geo-alt, .nome-localizacao, i.bi-card-image{
+      display: none;
+    }
+
+    #input-text{
+      width: 70%;
+    }
+
+    i.bi-search {
+      position: absolute;
+      color: var(--cor-empresa);
+      padding-top: 0.2rem;
+      padding-left: 3rem;
+      margin-right: 1rem;
+      font-size: 30px;
+    }
+
+    #input-text {
+      margin: auto;
+      font-size: 17px;
+      width: 90%;
+      padding: 1.2rem 0 1.2rem;
+      padding-left: 4rem;
+      border: 2mm ridge rgba(255, 197, 5, 0.943);
+      text-align: center;
+    }   
+
+    ul.footer-card{
+      flex-wrap: wrap;
+      margin: auto;
+    }
+
+    .footer-card a{
+      width: 100%;
+    }
+  
+  }

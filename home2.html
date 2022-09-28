@@ -1,42 +1,37 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
-    />
-    <link rel="stylesheet" href="./css/home.css" />
-    <link rel="stylesheet" href="./css/padrao-telas.css">
-    <title>HOME</title>
-  </head>
 
-  <body>
-    <header class="cabecalho">      
-      <nav id="menu">
-        <ul class="ul-menu">
-          <a href="login.html"
-            >
-            
-            <li id="image-usuario"><i class="bi bi-file-person"></i>
-            </i></li
-          ></a>
-      
-          <li id="image-localizacao">
-            <i class="bi bi-geo-alt"></i>
-            <p class="nome-localizacao">Londrina, PR</p>
-          </li>
-      
-          <li class="logo-empresa">
-            <i class="bi bi-card-image"></i>
-          </li>
-        </ul>
-      </nav>
-    </header>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
+  <link rel="stylesheet" href="./css/home.css" />
+  <link rel="stylesheet" href="./css/padrao-telas.css">
+  <title>HOME</title>
+</head>
 
-    <main>
+<body>
+  <header class="cabecalho">
+    <nav class="menu">
+      <ul class="ul-menu">
+        <a href="login.html">
+          <li id="image-usuario"><i class="bi bi-file-person"></i></li>
+        </a>
+
+        <li id="image-localizacao">
+          <i class="bi bi-geo-alt"></i>
+          <p class="nome-localizacao">Londrina, PR</p>
+        </li>
+
+        <li class="logo-empresa">
+          <i class="bi bi-card-image"></i>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
     <section id="mensagens-inicio">
       <h1 id="nome-empresa">NOME DA EMPRESA</h1>
       <h2 class="mensagem">Seja bem-vindo!</h2>
@@ -46,60 +41,45 @@
     <!-- input de pesquisa -->
     <section id="input">
       <i class="bi bi-search"></i>
-      <input
-        id="input-text"
-        type="text"
-        placeholder="Procure seu pedido aqui"
-      />
+      <input id="input-text" type="text" placeholder="Procure seu pedido aqui" />
     </section>
 
     <section id="categorias">
       <ul id="categoria-ul">
-        <a href="" class="a-categoria"
-          ><li class="categoria">Categoria 1</li></a
-        >
-        <a href="" class="a-categoria"
-          ><li class="categoria">Categoria 2</li></a
-        >
-        <a href="" class="a-categoria"
-          ><li class="categoria">Categoria 3</li></a
-        >
-        <a href="" class="a-categoria"
-          ><li class="categoria">Categoria 4</li></a
-        >
+        <a href="" class="a-categoria">
+          <li class="categoria">Categoria 1</li>
+        </a>
+        <a href="" class="a-categoria">
+          <li class="categoria">Categoria 2</li>
+        </a>
+        <a href="" class="a-categoria">
+          <li class="categoria">Categoria 3</li>
+        </a>
+        <a href="" class="a-categoria">
+          <li class="categoria">Categoria 4</li>
+        </a>
       </ul>
     </section>
 
     <section id="cards">
       <div class="card">
-        <img
-          src="https://www.imagensempng.com.br/wp-content/uploads/2022/01/2442.png"
-          alt="Logo exemplo"
-        />
+        <img src="https://www.imagensempng.com.br/wp-content/uploads/2022/01/2442.png" alt="Logo exemplo" />
         <h3 class="nome-produto-card">Produto 1</h3>
       </div>
 
       <div class="card">
-        <img
-          src="https://i.pinimg.com/736x/ec/14/7c/ec147c4c53abfe86df2bc7e70c0181ff.jpg"
-          alt="Logo exemplo"
-        />
+        <img src="https://i.pinimg.com/736x/ec/14/7c/ec147c4c53abfe86df2bc7e70c0181ff.jpg" alt="Logo exemplo" />
         <h3 class="nome-produto-card">Produto 2</h3>
       </div>
 
       <div class="card">
-        <img
-          src="https://www.pngplay.com/wp-content/uploads/2/Chocolate-Cake-No-Background.png"
-          alt="Logo exemplo"
-        />
+        <img src="https://www.pngplay.com/wp-content/uploads/2/Chocolate-Cake-No-Background.png" alt="Logo exemplo" />
         <h3 class="nome-produto-card">Produto 3</h3>
       </div>
 
       <div class="card">
-        <img
-          src="https://containerburger.com.br/wp-content/uploads/2019/02/lanche-sem-fundo-com-sombra.png"
-          alt="Logo exemplo"
-        />
+        <img src="https://containerburger.com.br/wp-content/uploads/2019/02/lanche-sem-fundo-com-sombra.png"
+          alt="Logo exemplo" />
         <h3 class="nome-produto-card">Produto 4</h3>
       </div>
     </section>
@@ -107,6 +87,8 @@
     <div id="ver-mais">
       <a href="">Ver mais >> </a>
     </div>
+
+
     <!-- seção avalie nosso APP -->
     <section id="avaliacao">
       <p id="titulo-avaliacao">AVALIE NOSSO APP</p>
@@ -114,45 +96,46 @@
       <i class="bi bi-hand-thumbs-down"></i>
       <span id="frase-avaliacao">Sua avaliação pode gerar cupons</span>
     </section>
-    </main>
+  </main>
 
-    <footer id="footer" class="footer">
-        <ul class="footer-card">
-        <a href="home2.html">
-          <li id="footer-item">
-            <i class="bi bi-house-fill"></i>
-            <p class="footer-name-item">HOME</p>
-          </li>
-        </a>
+  <footer id="footer" class="footer">
+    <ul class="footer-card">
+      <a href="home2.html">
+        <li id="footer-item">
+          <i class="bi bi-house-fill"></i>
+          <p class="footer-name-item">HOME</p>
+        </li>
+      </a>
 
-        <a href="cadastrar_usuario.html">
-          <li id="footer-item">
-            <i class="bi bi-emoji-smile"></i>
-            <p class="footer-name-item">CADASTRO USUÁRIO</p>
-          </li>
-        </a>
+      <a href="cadastrar_usuario.html">
+        <li id="footer-item">
+          <i class="bi bi-emoji-smile"></i>
+          <p class="footer-name-item">CADASTRO USUÁRIO</p>
+        </li>
+      </a>
 
-        <a href="cadastro_produto.html">
-          <li id="footer-item">
-            <i class="bi bi-upc-scan"></i>
-            <p class="footer-name-item">CADASTRO PRODUTO</p>
-          </li>
-        </a>
+      <a href="cadastro_produto.html">
+        <li id="footer-item">
+          <i class="bi bi-upc-scan"></i>
+          <p class="footer-name-item">CADASTRO PRODUTO</p>
+        </li>
+      </a>
 
-        <a href="carrinho.html">
-          <li id="footer-item">
-            <i class="bi bi-cart"></i>
-            <p class="footer-name-item">CARRINHO</p>
-          </li>
-        </a>
+      <a href="carrinho.html">
+        <li id="footer-item">
+          <i class="bi bi-cart"></i>
+          <p class="footer-name-item">CARRINHO</p>
+        </li>
+      </a>
 
-        <a href="produto.html">
-          <li id="footer-item">
-            <i class="bi bi-stickies"></i>
-            <p class="footer-name-item">PRODUTO</p>
-          </li>
-        </a>
-      </ul>
-    </footer>
-  </body>
+      <a href="produto.html">
+        <li id="footer-item">
+          <i class="bi bi-stickies"></i>
+          <p class="footer-name-item">PRODUTO</p>
+        </li>
+      </a>
+    </ul>
+  </footer>
+</body>
+
 </html>
