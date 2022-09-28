@@ -196,11 +196,38 @@ h3.nome-produto-card {
     width: 100%;
   }
 
-#categoria-ul{
-  flex-wrap: wrap;
-  /* flex-grow: 1; */
+  #input-text{
+    width: 70%;
   }
 
+  i.bi-search {
+    position: absolute;
+    color: var(--cor-empresa);
+    padding-top: 0.2rem;
+    padding-left: 3rem;
+    margin-right: 1rem;
+    font-size: 30px;
+  }
+
+  #input-text {
+    margin: auto;
+    font-size: 17px;
+    width: 90%;
+    padding: 1.2rem 0 1.2rem;
+    padding-left: 4rem;
+    border: 2mm ridge rgba(255, 197, 5, 0.943);
+    text-align: center;
+  }   
+
+#categoria-ul{
+  flex-wrap: wrap;
+  justify-content: center;
+  }
+
+  .a-categoria{
+    display: flex;
+  }
+  
   section#cards{
     flex-wrap: wrap;
     margin: auto;
