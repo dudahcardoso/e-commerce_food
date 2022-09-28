@@ -57,25 +57,30 @@ input:focus {
 
 /* seção das gategorias */
 #categorias {
-  margin-left: 2rem;
-  width: 80%;
-  margin: auto;
+  display: flex;
+  justify-content: space-around;
 }
 
 #categoria-ul {  
-  display: flex;
-  justify-content: space-evenly;
+  display: flex; 
+  justify-content: center;
+}
+
+li.categoria{
+  margin: auto;
 }
 
 .a-categoria{
+  justify-content: center;
   text-decoration: none;
+  margin: 3rem 5rem;
 }
 
 .categoria{
   color: grey;
   border: solid 1px var(--cor-empresa);
   border-radius: 2rem;
-  width: 100%;
+  width: 90%;
   padding: 2rem;
   margin: 1.2rem;
   font-weight: 300;
