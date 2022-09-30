@@ -8,7 +8,6 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
     />
-    <link rel="stylesheet" href="./css/home.css" />
     <link rel="stylesheet" href="./css/produto.css" />
     <link rel="stylesheet" href="./css/carrinho.css" />
     <link rel="stylesheet" href="./css/login.css" />
@@ -18,19 +17,17 @@
 
   <body>
     <header class="cabecalho">
-      
-      <nav id="menu">
+      <nav class="menu">
         <ul class="ul-menu">
-          <a href="login.html"
-            ><li id="menu-food"><i class="bi bi-file-person"></i>
-            </i></li
-          ></a>
-      
+          <a href="login.html">
+            <li id="image-usuario"><i class="bi bi-file-person"></i></li>
+          </a>
+  
           <li id="image-localizacao">
             <i class="bi bi-geo-alt"></i>
             <p class="nome-localizacao">Londrina, PR</p>
           </li>
-      
+  
           <li class="logo-empresa">
             <i class="bi bi-card-image"></i>
           </li>
@@ -38,21 +35,28 @@
       </nav>
     </header>
 
+    
     <section class="secao-login">
       <h1 id="nome-empresa">NOME DA EMPRESA</h1>
       <img src="https://png.pngtree.com/png-vector/20190120/ourlarge/pngtree-gallery-vector-icon-png-image_470660.jpg" alt="" />
 
+      <section id="mensagem-ok" class="mensagem-ok">
+
+      </section>
+
       <div class="login-senha">
         <label for="" class="login">LOGIN</label>
-        <input type="text" class="input"/>
+        <input id="myInput" type="text" class="input"/>
 
         <label for="" class="login">SENHA</label>
-        <input type="password" class="input"/>
+        <input id="myInput" type="password" class="input"/>
 
-        <button class="botao">REALIZAR LOGIN</button>
+        <button id="addBtn" class="botao">REALIZAR LOGIN</button>
       </div>
 
     </section>
+
+ 
 
     <footer id="footer" class="footer">
       <ul class="footer-card">
@@ -92,5 +96,7 @@
       </a>
     </ul>
   </footer>
+
+  <script src="./js/script.js"></script>
   </body>
 </html>
