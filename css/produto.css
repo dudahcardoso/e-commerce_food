@@ -14,14 +14,18 @@ i.bi-chevron-double-left {
 
 i.bi-heart-fill {
   font-size: 70px;
-  text-shadow: 1px 1px black;
-  color: red;
+  text-shadow: 2px 2px 2px black;
+  color: var(--cor-empresa);
   padding-right: 1.5rem;
 }
 
-i.bi-heart-fill:hover {
-  color: #fce2c1;
+i.red{
+  color: red;
 }
+
+/* i.bi-heart-fill:hover {
+  color: #fce2c1;
+} */
 
 /* seção produto */
 .secao-produto {
